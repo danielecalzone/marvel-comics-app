@@ -1,0 +1,75 @@
+/* Styles for the character container */
+.character-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Styles for the main heading in the character container */
+.character-container h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #ED1D24;
+}
+
+/* Styles for the character list */
+.character-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Adjust the image size here */
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Styles for each character item */
+.character-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Styles for the character name */
+.character-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ED1D24;
+}
+
+/* Styles for the character link */
+.character-link {
+    text-decoration:none;
+}
+
+/* Styles for the character image */
+.character-image {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+/* Styles for the pagination section */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Styles for the pagination buttons */
+.pagination-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ED1D24;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Styles for the disabled pagination button */
+.pagination-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
